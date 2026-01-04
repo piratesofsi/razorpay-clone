@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-deepBlue: #02042a;
+  
+  --color-lightBlue: #2b84ea;
+  --color-lightBlue300: #4b94ed;
+  --color-lightBlue500: #0b72e7;
+  --color-greenLight: #61cea6;
+  --color-grayText: #818597;
+  --color-lightGray: #e2e2e2;
+  --color-grayBlue: #344a6c;
+  --color-deepBlueHead: #162f56;
+  --color-gray2: #525a76;
+
+  
+  /* font */
+  --font-mullish: "Mulish", sans-serif;
+
+  /* ✅ custom font weights */
+  --font-weight-razorbold: 650;
+  --font-weight-extraboldish: 800;
+}
+
+
