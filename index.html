@@ -35,6 +35,10 @@
         top: -50%;
       }
     }
+
+    .ctcsection{
+      background-size: 100% 100%;
+    }
    </style>
 
   <!-- Tailwind CSS -->
@@ -1040,7 +1044,8 @@
    <section>
     <div class=" w-11/12 max-w-[1300px] mx-auto relative  py-20">
       <!-- dotted image  -->
-      <img src="images/feature-section1-dottedrows.png" alt="">
+      <img src="images/feature-section1-dottedrows.png" alt=""
+      class="absolute w-[200px] top-[8rem] left-[2rem] -z-[10]">
       <!-- heading 1 -->
        <h2 class="font-extrabold text-2xl  text-deepBlueHead l text-center mx-auto"> An Experience <br>
                 People Love to Talk About</h2>
@@ -1050,45 +1055,57 @@
 
         <!-- left button  -->
          <!-- light background  -->
-         <div>
+         <div class="w-[100px] h-[100px] rounded-full bg-[#f4f8ff] absolute left-0 top-1/2 flex justify-center items-center">
           <!-- dark background -->
-           <div>
+           <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center mix-blend-multiply">
             <div>
 
               <!-- next image or svg  -->
+                     <i
+          data-feather="chevron-right"
+         class=" w-6 h-6 text-gray-400 rotate-180 stroke-[5px]"
+              
+         ></i>
+
+
             </div>
            </div>
          </div>
 
          <!-- right button  -->
          <!-- light background  -->
-         <div>
+         <div class="w-[100px] h-[100px] rounded-full bg-[#f4f8ff] absolute right-0 top-1/2 flex justify-center items-center">
           <!-- dark background -->
-           <div>
+           <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center mix-blend-multiply">
             <div>
 
               <!-- next image or svg  -->
+                      <i
+          data-feather="chevron-right"
+         class=" w-6 h-6 text-gray-400  stroke-[5px]"
+              
+         ></i>
             </div>
            </div>
          </div>
          <!-- main content  -->
          
-         <div class="flex flex-row gap-4 max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
+         <div class="flex flex-row  max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
           <!-- left  image  -->
            <img src="images/testimonial.jpg" alt=""
             height="320px"
-      width="320px"
-      class="rounded-xl">
+               width="320px"
+                  class="rounded-xl ">
 
            <!-- right part  -->
-            <div>
+            <div class="max-w-[400px] flex flex-col gap-1">
               <!-- img  -->
                <img src="images/quotes.svg " alt=""   width="35px"
-        height="40px">
+                        height="40px" class="-mb-3">
                <!-- para  -->
                 <p class=" font-extralight text-3xl"> Readymade Closed Wallet Solution For Quick Refunds</p>
                 <!-- link learn more  -->
-                <a href=" " class=" text-grayText underline italic "> Learn More </a>
+                <a href="#" class=" text-grayText underline italic font-mullish text-[0.9rem] "> Learn More </a>
                 <!-- heading  -->
                  <h3 class="font-extrabold text-2xl">Lorem Ipsum </h3>
                  <!-- para 2  -->
@@ -1110,6 +1127,79 @@
 
     </div>
    </section>
+
+   <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover min-h-[510px] ctcsection ">
+    <!-- main content  --> 
+    <div class="w-11/12 max-w-[1080px] mx-auto relative  z-50 flex justify-between items-center gap-20 pt-16">
+     <!-- left part -->
+      <div class="max-w-[600px]  flex flex-col gap-5 mt-12" >
+        <!-- heading  -->
+         <h2 class="font-mullish text-2xl font-bold text-white">Supercharge your business with Razorpay</h2>
+         <!-- green line -->
+          <div class="bg-greenLight w-6 h-1"> </div>
+          <!-- para -->
+           <p class="font-mullish   text-white">Sign up now to experience the future of payments and offer <br>
+                  your customers the best checkout experience.</p>
+
+          <!-- list -->
+
+          <ul class="flex flex-row flex-wrap gap-x-11 text-white gap-y-3">
+            <li class="flex flex-row">   <i data-feather="check" class="text-greenLight"></i>
+            <span>Quick Onboarding
+            </span></li>
+            <li class="flex flex-row ">
+               <i data-feather="check" class="text-greenLight"></i>
+            <span>Access to entire product suite
+
+            </span>
+            </li>
+            <li  class="flex flex-row ">
+               <i data-feather="check" class="text-greenLight"></i>
+            <span>API access
+
+            </span>
+            </li>
+            <li class="flex flex-row ">
+                <i data-feather="check" class="text-greenLight"></i>
+            <span>24x7 support
+            </span>
+            </li>
+          </ul>
+
+          <div>
+            <button class=" text-lightBlue bg-white text-sm font-bold min-w-[32px] rounded-sm py-3 px-4 flex flex-row justify-center items-center hover:text-blue-600  transition-all duration-200 cursor-pointer ">
+              Sign Up
+               <svg
+          viewBox="0 0 24 24"
+          focusable="false"
+          class="w-[14px] h-[14px] ml-3"
+        >
+          <path
+            fill="currentColor"
+            d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+          ></path>
+        </svg>
+            </button>
+          </div>
+
+      </div>
+
+      <!-- right part -->
+       <div>
+        <img src="/images/ctaImg.svg" alt="" width="240px" height="282px"
+        class="mt-19 pt-3">
+       </div>
+    </div>
+   </section>
+
+
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+  </script>
+  
+
 
 </body>
 </html>
