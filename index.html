@@ -46,6 +46,8 @@
 </head>
 <body class="font-mullish">
 
+  <div class="relative w-full overflow-x-hidden">
+
   <!-- NAVBAR -->
   <nav class="bg-deepBlue">
      <div class="max-w-270 relative mx-auto flex items-center justify-between">
@@ -515,9 +517,7 @@
 
    <!-- feature section 2  -->
 
-   <section class="bg-[url(./images/feature-section-2BG.svg)]  bg-no-repeat bg-cover pb-[600px] mt-14 pt-[19rem]
-
-    ">
+   <section class="bg-[url(./images/feature-section-2BG.svg)]  bg-no-repeat bg-cover pb-[600px] mt-14 pt-[19rem]  ">
     <div class=" w-10/12 max-w-[1080px]  mx-auto relative pt-4 ">
     <!-- heading  -->
      <h2 class="font-bold text-white font-mullish text-2xl leading-[1.5] text-center "> Explore Razorpay Business Banking</h2>
@@ -1128,9 +1128,13 @@
     </div>
    </section>
 
-   <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover min-h-[510px] ctcsection ">
+
+   <!-- cta section  -->
+   <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover min-h-[510px] ctcsection relative 
+    ">
+    <!-- relative makes the element can stack  -->
     <!-- main content  --> 
-    <div class="w-11/12 max-w-[1080px] mx-auto relative  z-50 flex justify-between items-center gap-20 pt-16">
+    <div class="w-11/12 max-w-[1080px] mx-auto relative  z-50 flex justify-between items-center gap-20 pt-16  ">
      <!-- left part -->
       <div class="max-w-[600px]  flex flex-col gap-5 mt-12" >
         <!-- heading  -->
@@ -1191,6 +1195,98 @@
        </div>
     </div>
    </section>
+
+   </div>
+
+   <!-- footer -->
+    <footer   style="background: linear-gradient(to right, #eef9fe, #edf7ff)" 
+    class="-mt-[400px]  ">
+ 
+      <div class="w-10/12 max-w-[1080px]   pb-10 pt-[450px] mx-auto relative  ">
+        <!-- block 1  -->
+         <div class="max-w-[260px] flex flex-col items-start justify-evenly">
+          <!-- logo image  -->
+            <img src="images/logo-dark.svg" alt=""   loading="lazy"
+          width="120px"
+          height="24px" class="pb-1">
+             
+            <!-- para 1 -->
+             <p class="font font-mullish text-gray-500 text-sm  my-3">Razorpay is the only payments solution in India that allows businesses to accept, process and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, UPI and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p>
+
+               <!-- para 2 -->
+             <p class="font font-mullish text-gray-500 text-sm my-3 ">RazorpayX supercharges your business banking experience, bringing effectiveness, efficiency, and excellence to all financial processes. With RazorpayX, businesses can get access to fully-functional current accounts, supercharge their payouts and automate payroll compliance.</p>
+
+               <!-- para 3-->
+             <p class="font font-mullish text-gray-500 text-sm  my-3">Manage your marketplace, automate bank transfers, collect recurring payments, share invoices with customers and avail working capital loans - all from a single platform. Fast forward your business with Razorpay.</p>
+
+               <!-- para 4 -->
+             <p class=" font-mullish text-gray-500 text-[0.625rem] my-3 ">Disclaimer: The RazorpayX powered Current Account and VISA corporate credit card are provided by RBI licensed banks. Your RazorpayX powered account is provided by our partner bank, in accordance with RBI regulations. RazorpayX itself is not a bank and doesn't hold or claim to hold a banking license.</p>
+
+           
+         
+              <!-- h3 -->
+              <h3 class=" font-mullish text-black font-medium  "> SUBSCRIBE TO OUR  <br> NEWSLETTER</h3>
+              <!-- input email address -->
+          <form
+  class="relative w-[260px] mt-2 mb-4
+         bg-white border-2 border-gray-300 rounded-sm
+         transition-all duration-200
+         focus-within:border-lightBlue500"
+>
+  <input
+    type="text"
+    placeholder="Your email address"
+    class="w-full pr-20 px-5 py-2.5
+           font-mullish text-sm
+           bg-transparent outline-none
+           placeholder:text-gray-400"
+  />
+
+  <button
+    class="absolute right-3 top-1/2 -translate-y-1/2
+           font-mullish text-sm font-bold
+           text-lightBlue300 hover:text-lightBlue500
+           transition-all duration-200 flex items-center"
+  >
+    Subscribe
+    <svg viewBox="0 0 24 24" class="w-[14px] h-[14px] ml-3">
+      <path
+        fill="currentColor"
+        d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+    </svg>
+  </button>
+</form>
+
+
+              <!-- 2 images  -->
+              <div class="flex items-start gap-2">
+                  <img src="images/footer-certificate-1.png" alt=""    loading="lazy"
+            width="92"
+            height="40"
+            class="cursor-pointer">
+                  <img src="images/footer-certificate-2.jpg" alt=""  
+                    loading="lazy"
+            width="122"
+            height="80"
+            class="cursor-pointer" >
+              </div>
+
+  
+         </div>
+         <!-- block 2  -->
+         <div>
+          
+         </div>
+         <!-- block 3  -->
+         <div>
+          
+         </div>
+         <!-- block 4  -->
+         <div>
+          
+         </div>
+      </div>
+    </footer>
 
 
 
