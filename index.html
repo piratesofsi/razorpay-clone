@@ -14,6 +14,13 @@
 />
 
   <style>
+    * {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
     .corefeaturesection{
        background-size: 100% 100%;
        padding-top: 12rem;
@@ -50,14 +57,14 @@
 
   <!-- NAVBAR -->
   <nav class="bg-deepBlue">
-     <div class="max-w-270 relative mx-auto flex items-center justify-between">
+     <div class="w-full max-w-270 relative mx-auto flex items-center justify-between">
        <!-- logo -->
        
           <a href="#" class="py-6" ><img src="/images/logo2.png" alt="logo" width="125px" height="30px"></a>
       
               <!-- all the nav links  -->
-        <ul class=" hidden lg:flex justify-between gap-7">
-          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer  relative group ">
+        <ul class=" flex justify-between gap-7">
+          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer  relative group hidden lg:block ">
             <!-- relative q kiya hai taaki neeche wali ko absolute krke iski width use kr sake  -->
              <!-- also group means jaise mein parent pe hover kru to woh line blue active hojaye -->
             <!-- link  -->
@@ -67,38 +74,38 @@
                
             </div>
           </li>
-          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer relative group">
+          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer relative group hidden lg:block">
              <a href="#">Banking</a> 
            <!-- div jisse hover pe neeche line  -->
-            <div class="absolute bottom-0 w-full h-1 transition-all duration-200  bg-lightBlue hidden group-hover:block "> 
+            <div class="absolute bottom-0 w-full h-1 transition-all duration-200  bg-lightBlue hidden group-hover:block "> </div>
 
             </li>
 
-          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer">
+          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer hidden lg:block">
             <a href="#">Corporate Card </a>
           </li>
-          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer"><a href="#">Payroll </a>
+          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer hidden lg:block"><a href="#">Payroll </a>
            </li>
-          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer relative group"> 
+          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer relative group hidden lg:block"> 
             <a href="#">Resources</a>
            <!-- div jisse hover pe neeche line  -->
             <div class="absolute bottom-0 w-full h-1 transition-all duration-200  bg-lightBlue hidden group-hover:block ">
 
             </li>
 
-          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer relative group "> <a href="#">Support</a>
+          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer relative group hidden lg:block "> <a href="#">Support</a>
            <!-- div jisse hover pe neeche line  -->
             <div class="absolute bottom-0 w-full h-1 transition-all duration-200  bg-lightBlue hidden group-hover:block "></li>
-          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer relative group "> <a href="#">Pricing</a>
+          <li class="text-white py-6 transition-all duration-200 hover:text-lightBlue cursor-pointer relative group  hidden lg:block"> <a href="#">Pricing</a>
            <!-- div jisse hover pe neeche line  -->
             <div class="absolute bottom-0 w-full h-1 transition-all duration-200  bg-lightBlue hidden group-hover:block "></li>
         </ul>
         
         <div class="flex space-x-6">
-          <img src="/images/india-flag.svg" alt="indian-flag">
-          <button class="text-white py-3 font-bold border-lightBlue border px-5 cursor-pointer rounded-b-sm text-sm">Login</button>
-          <button class=" bg-white flex  items-center text-lightBlue py-3 px-4  font-bold
-         hover:text-lightBlue500 cursor-pointer text-sm transition-all duration-200 rounded-sm">Sign Up   
+          <img src="/images/india-flag.svg" alt="indian-flag" class=" hidden lg:block">
+          <button class="text-white py-3 font-bold border-lightBlue border px-5 cursor-pointer rounded-b-sm text-sm ">Login</button>
+          <button class=" bg-white   items-center text-lightBlue py-3 px-4  font-bold
+         hover:text-lightBlue500 cursor-pointer text-sm transition-all duration-200 rounded-sm hidden  lg:flex">Sign Up   
 
              <svg
        xmlns="http://www.w3.org/2000/svg"
@@ -126,8 +133,8 @@
   <!-- hero section  -->
 
   <section class="relative bg-deepBlue pt-2 pb-13 ">
-    <div class="w-10/12 max-w-270 mx-auto flex flex-row justify-between items-center ">
-      <div class="flex flex-col items-start mx-auto gap-8 w-xl ">  <!-- left part  -->
+    <div class="w-10/12 max-w-[1080] mx-auto flex sm:flex-col lg:flex-row  justify-between items-center  ">
+      <div class="flex flex-col items-start  gap-8 w-xl ">  <!-- left part  -->
        <!-- h1 , greeen line , p , button  -->
        <h1 class="text-white text-[40px] font-mullish font-bold tracking-normal leading-[1.2]">Power your finance, grow your business</h1>
        <div class="bg-greenLight w-6 h-1"></div>
@@ -143,7 +150,7 @@
         <!-- right part  -->
                <!-- image -->
                 <!-- shape -->
-                <img src="/images/hero-illustration.jpg" alt="hero" class="max-w-170 " >
+                <img src="/images/hero-illustration.jpg" alt="hero" class="w-full max-w-[680px] " >
       </div>
 
 
@@ -166,7 +173,8 @@
     <div class=" relative max-w-[1080px] w-11/12 mx-auto flex flex-col justify-between items-center gap-5 bg-white 
      "> 
       <!-- heading -->
-       <h2 class="font-extrabold text-center leading-[1.2] font-mullish text-2xl"> Accept Payments with Razorpay Payment Suite</h2>
+       <h2 class="font-extrabold text-center leading-[1.2] font-mullish text-2xl hidden md:block"> Accept Payments with Razorpay Payment Suite</h2>
+        <h2 class="font-extrabold text-center leading-[1.2] font-mullish text-2xl md:hidden"> Explore  Razorpay Payment Suite</h2>
        <!-- green line choti -->
         <div class="bg-greenLight  items-center h-1 w-7"></div>
         <!-- content box  -->
@@ -768,7 +776,8 @@
 
 
        </div>
-    </div>
+   
+    
    </section>
 
 
@@ -1004,41 +1013,49 @@
 
      <!-- join razorpay section  -->
     <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100] ">
-      <div class="w-11/12 w-[1080px] mx-auto pt-4 flex ">
-        <!-- left part  -->
-         <div class="flex flex-col justify-center max-w-[calc(100%-500px)] ">
-          <!-- heading  -->
-           <h3 class="font-bold text-2xl text-deepBlueHead ">
-            Join the 50,00,000+ businesses using Razorpay
-           </h3>
-           <!-- green line  -->
-            <div class="w-7 h-1 bg-greenLight my-4 mb-10 ">  </div>
-            <!-- two paras -->
-            <p class="   opacity-80">
-              We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.
-            </p>
-            <p class=" mt-6 opacity-80">
-              Focus on your business while we handle the complexities of payments for you.
+  <div class="w-11/12 w-[1080px] mx-auto pt-4 flex ">
 
+    <!-- left part  -->
+    <div class="flex flex-col justify-center max-w-[calc(100%-500px)] ">
+      <h3 class="font-bold text-2xl text-deepBlueHead ">
+        Join the 50,00,000+ businesses using Razorpay
+      </h3>
 
-            </p>
-         </div>
+      <div class="w-7 h-1 bg-greenLight my-4 mb-10"></div>
 
-         <!-- right part -->
-          <div class="h-[500px] w-[500px] overflow-y-hidden relative "> 
-            <!-- gradient which has a z index higher then image at uppe position and at bottom  -->
-              <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
-                    class="absolute w-full h-[150px] top-0 z-50">    </div>
-            <!-- img with animation  -->
-            <img src="images/comanies.png" alt=""
-             class="absolute moveImage object-cover w-full h-auto">
+      <p class="opacity-80">
+        We make it easier for you to focus on building great products while we work on simplifying your payments.
+        Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.
+      </p>
 
-              <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
-                  class="absolute w-full h-[150px] bottom-0 z-50">
+      <p class="mt-6 opacity-80">
+        Focus on your business while we handle the complexities of payments for you.
+      </p>
+    </div>
 
-          </div>
+    <!-- right part -->
+    <div class="h-[500px] w-[500px] overflow-y-hidden relative">
+
+      <div
+        style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
+        class="absolute w-full h-[150px] top-0 z-50">
       </div>
-    </section>
+
+      <img
+        src="images/comanies.png"
+        alt=""
+        class="absolute moveImage object-cover w-full h-auto">
+
+      <div
+        style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
+        class="absolute w-full h-[150px] bottom-0 z-50">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
     
     <!-- testimonial section  -->
    <section>
@@ -1196,7 +1213,9 @@
     </div>
    </section>
 
-   </div>
+   
+    
+ 
 
    <!-- footer -->
     <footer   style="background: linear-gradient(to right, #eef9fe, #edf7ff)" 
@@ -1881,7 +1900,7 @@
         
       </div>
     </footer>
-
+</div>
 
 
   <script src="https://unpkg.com/feather-icons"></script>
